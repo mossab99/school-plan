@@ -1,0 +1,124 @@
+/* Timeline Styles */
+.timeline-unit-row {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.timeline-unit-header {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-unit-title {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.timeline-unit-dates {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.date-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.date-group label {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.timeline-date-input,
+.timeline-periods-input {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    color: #334155;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.timeline-date-input:focus,
+.timeline-periods-input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.timeline-lesson-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timeline-lesson-table th {
+    background: #f1f5f9;
+    text-align: left;
+    padding: 12px 24px;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.85em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.timeline-lesson-table td {
+    padding: 12px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.timeline-lesson-table tr:last-child td {
+    border-bottom: none;
+}
+
+.lesson-number {
+    font-weight: 600;
+    color: #64748b;
+    width: 40px;
+}
+
+.lesson-title {
+    font-weight: 500;
+    color: #334155;
+}
+
+.date-error {
+    color: #ef4444;
+    font-size: 0.75em;
+    margin-top: 2px;
+    display: none;
+}
+
+.input-error {
+    border-color: #ef4444 !important;
+}
+
+.olama-select:disabled,
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#save-timeline-btn {
+    transition: all 0.2s;
+}
+
+#save-timeline-btn.saving {
+    opacity: 0.7;
+    pointer-events: none;
+}
